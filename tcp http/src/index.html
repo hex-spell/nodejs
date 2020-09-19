@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>Prueba de host tcp bruto</title>
+    
+  </head>
+  <body>
+    <h1 id="working" style="position:absolute">Funciona!</h1>
+    <script type="text/javascript">
+      var header = document.getElementById("working");
+      let xpos = 0;
+      setInterval(function (){
+        header.style.left = xpos;
+        xpos++;
+        if(xpos>window.outerWidth-200) xpos = 0;
+      }, 1);
+      window.alert('Hello World');
+  </script>
+  </body>
+</html>
